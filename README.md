@@ -9,4 +9,15 @@
 
 ## Utilização
 
-## Exemplos
+```lua
+createTriangle('id', width, height)
+createTriangle('id', width, height) 
+createTriangle('id', width, height) 
+createTriangle('id', width, height) 
+```
+
+| Parâmetro | Descrição                     |
+| :-------- | :---------------------------- |
+| `id`      | Posição x do mapa             |
+| `y`       | Posição y do mapa             |
+| `z`       | Posição z do mapa             |

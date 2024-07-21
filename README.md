@@ -10,10 +10,7 @@
 
 **Full Polygons**
 ```lua
-dxCreateTriangle('id', width, height)
-dxCreateDiamond('id', width, height) 
-dxCreatePentagon('id', width, height) 
-dxCreateHexagon('id', width, height)
+createHexagon('id', width, height)
 ```
 
 | Parâmetro | Descrição                     |
@@ -24,10 +21,7 @@ dxCreateHexagon('id', width, height)
 
 **Stroke Polygons**
 ```lua
-dxCreateTriangleStroke('id', width, height, stroke)
-dxCreateDiamondStroke('id', width, height, stroke) 
-dxCreatePentagonStroke('id', width, height, stroke) 
-dxCreateHexagonStroke('id', width, height, stroke)
+createHexagonStroke('id', width, height, stroke)
 ```
 
 | Parâmetro | Descrição                     |
@@ -39,10 +33,7 @@ dxCreateHexagonStroke('id', width, height, stroke)
 
 **Draw Polygons**
 ```lua
-dxDrawTriangle('id', x, y, color, rotX, rotY, rotZ, postGUI)
-dxDrawDiamond('id', x, y, color, rotX, rotY, rotZ, postGUI)
-dxDrawPentagon('id', x, y, color, rotX, rotY, rotZ, postGUI)
-dxDrawHexagon('id', x, y, color, rotX, rotY, rotZ, postGUI)
+drawHexagon('id', x, y, color, rotX, rotY, rotZ, postGUI)
 ```
 
 | Parâmetro | Descrição                     |
@@ -60,9 +51,5 @@ dxDrawHexagon('id', x, y, color, rotX, rotY, rotZ, postGUI)
 
 **Example**
 ```lua
-addCommandHandler("localizar", function(player)
-    local target = getRandomPlayer()
-    local targetX, targetY, targetZ = getElementPosition(target)
-    exports["mta-gps"]:setGPS(player, targetX, targetY, targetZ)
-end)
+
 ```

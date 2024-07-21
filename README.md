@@ -10,10 +10,10 @@
 
 **Full Polygons**
 ```lua
-createTriangle('id', width, height)
-createDiamond('id', width, height) 
-createPentagon('id', width, height) 
-createHexagon('id', width, height)
+dxCreateTriangle('id', width, height)
+dxCreateDiamond('id', width, height) 
+dxCreatePentagon('id', width, height) 
+dxCreateHexagon('id', width, height)
 ```
 
 | Parâmetro | Descrição                     |
@@ -24,10 +24,10 @@ createHexagon('id', width, height)
 
 **Stroke Polygons**
 ```lua
-createTriangleStroke('id', width, height, stroke)
-createDiamondStroke('id', width, height, stroke) 
-createPentagonStroke('id', width, height, stroke) 
-createHexagonStroke('id', width, height, stroke)
+dxCreateTriangleStroke('id', width, height, stroke)
+dxCreateDiamondStroke('id', width, height, stroke) 
+dxCreatePentagonStroke('id', width, height, stroke) 
+dxCreateHexagonStroke('id', width, height, stroke)
 ```
 
 | Parâmetro | Descrição                     |
@@ -37,22 +37,26 @@ createHexagonStroke('id', width, height, stroke)
 | `height`  | Size of height.               |
 | `stroke`  | Size of stroke.               |
 
-**Stroke Polygons**
+**Draw Polygons**
 ```lua
-createTriangleStroke('id', width, height, stroke)
-createDiamondStroke('id', width, height, stroke) 
-createPentagonStroke('id', width, height, stroke) 
-createHexagonStroke('id', width, height, stroke)
+dxDrawTriangle('id', x, y, color, rotX, rotY, rotZ, postGUI)
+dxDrawDiamond('id', x, y, color, rotX, rotY, rotZ, postGUI)
+dxDrawPentagon('id', x, y, color, rotX, rotY, rotZ, postGUI)
+dxDrawHexagon('id', x, y, color, rotX, rotY, rotZ, postGUI)
 ```
 
 | Parâmetro | Descrição                     |
 | :-------- | :---------------------------- |
 | `id`      | What is the polygon called.   |
-| `width`   | Size of width.                |
-| `height`  | Size of height.               |
-| `stroke`  | Size of stroke.               |
+| `x`       | Size of x.                    |
+| `y`       | Size of y.                    |
+| `tocolor` | Color of polygon.             |
+| `rotX`    | Polygon rotation in X.        |
+| `rotY`    | Polygon rotation in Y.        |
+| `rotZ`    | Polygon rotation in Z.        |
+| `postGUI` | Define if the polygon is drawn over the graphical interface (true) or behind it (false).             |
 
-# How to use
+# Utilization
 
 **Example**
 ```lua

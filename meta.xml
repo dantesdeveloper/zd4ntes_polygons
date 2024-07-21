@@ -1,0 +1,8 @@
+<meta>
+
+      <min_mta_version client='1.6.0' server='1.6.0' />
+
+      <!-- UTILS -->
+      <script src='utils/hexagon.lua' type='client' cache='false' />
+
+</meta>

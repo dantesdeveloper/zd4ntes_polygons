@@ -13,7 +13,7 @@
 createHexagon('id', width, height)
 ```
 
-| Parâmetro | Descrição                     |
+| Parameter | Description                   |
 | :-------- | :---------------------------- |
 | `id`      | What is the polygon called.   |
 | `width`   | Size of width.                |
@@ -24,7 +24,7 @@ createHexagon('id', width, height)
 createHexagonStroke('id', width, height, stroke)
 ```
 
-| Parâmetro | Descrição                     |
+| Parameter | Description                   |
 | :-------- | :---------------------------- |
 | `id`      | What is the polygon called.   |
 | `width`   | Size of width.                |
@@ -36,7 +36,7 @@ createHexagonStroke('id', width, height, stroke)
 drawHexagon('id', x, y, color, rotX, rotY, rotZ, postGUI)
 ```
 
-| Parâmetro | Descrição                     |
+| Parameter | Description                   |
 | :-------- | :---------------------------- |
 | `id`      | What is the polygon called.   |
 | `x`       | Size of x.                    |
@@ -45,11 +45,37 @@ drawHexagon('id', x, y, color, rotX, rotY, rotZ, postGUI)
 | `rotX`    | Polygon rotation in X.        |
 | `rotY`    | Polygon rotation in Y.        |
 | `rotZ`    | Polygon rotation in Z.        |
-| `postGUI` | Define if the polygon is drawn over the graphical interface (true) or behind it (false).             |
+| `postGUI` | Define if the polygon is drawn over the graphical interface (true) or behind it (false). |
+
+**Offset Polygons**
+```lua
+hexagonOffset('id', value)
+```
+
+| Parameter | Description                   |
+| :-------- | :---------------------------- |
+| `id`      | What is the polygon called.   |
+| `value`   | Value to Offset in svg.       |
 
 # Utilization
 
 **Example**
 ```lua
+cache = {
+      example = { false, 0, getTickCount() }
+}
 
+function start()
+      createHexagon('bgExample', 50, 50)
+      createHexagonStroke('example', 55, 55)
+end
+addEventHandler('onClientResourceStart', resourceRoot, start)
+
+function interface()
+      drawHexagon('base', 910, 500, tocolor(0, 0, 0), 0, 0, 0, false)
+
+      drawHexagon('example', 910, 500, tocolor(255, 0, 0), 0, 0, 0, false)
+      hexagonOffset('example', getElementHealth(localPlayer))
+end
+addEventHandler('onClientRender', root, interface)
 ```

@@ -1,1 +1,4 @@
-# zd4ntes_polygons
+# 📐 Sistema de Polígonos
+
+Hexagono
+![preview](.github/preview.png)

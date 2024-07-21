@@ -72,7 +72,7 @@ end
 addEventHandler('onClientResourceStart', resourceRoot, start)
 
 function interface()
-      drawHexagon('base', 910, 500, tocolor(0, 0, 0), 0, 0, 0, false)
+      drawHexagon('bgExample', 910, 500, tocolor(0, 0, 0), 0, 0, 0, false)
 
       drawHexagon('example', 910, 500, tocolor(255, 0, 0), 0, 0, 0, false)
       hexagonOffset('example', getElementHealth(localPlayer))

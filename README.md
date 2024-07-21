@@ -31,6 +31,16 @@ createHexagonStroke('id', width, height, stroke)
 | `height`  | Size of height.               |
 | `stroke`  | Size of stroke.               |
 
+**Offset Polygons**
+```lua
+hexagonOffset('id', value)
+```
+
+| Parameter | Description                   |
+| :-------- | :---------------------------- |
+| `id`      | What is the polygon called.   |
+| `value`   | Value to Offset in svg.       |
+
 **Draw Polygons**
 ```lua
 drawHexagon('id', x, y, color, rotX, rotY, rotZ, postGUI)
@@ -46,16 +56,6 @@ drawHexagon('id', x, y, color, rotX, rotY, rotZ, postGUI)
 | `rotY`    | Polygon rotation in Y.        |
 | `rotZ`    | Polygon rotation in Z.        |
 | `postGUI` | Define if the polygon is drawn over the graphical interface (true) or behind it (false). |
-
-**Offset Polygons**
-```lua
-hexagonOffset('id', value)
-```
-
-| Parameter | Description                   |
-| :-------- | :---------------------------- |
-| `id`      | What is the polygon called.   |
-| `value`   | Value to Offset in svg.       |
 
 # Utilization
 

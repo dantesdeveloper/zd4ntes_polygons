@@ -3,6 +3,9 @@
       <min_mta_version client='1.6.0' server='1.6.0' />
 
       <!-- UTILS -->
-      <script src='utils/hexagon.lua' type='client' cache='false' />
+      <script src='utils/u-triangle.lua' type='client' cache='false' />
+      <script src='utils/u-diamond.lua' type='client' cache='false' />
+      <script src='utils/u-pentagon.lua' type='client' cache='false' />
+      <script src='utils/u-hexagon.lua' type='client' cache='false' />
 
 </meta>

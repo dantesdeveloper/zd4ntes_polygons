@@ -1,7 +1,5 @@
 # 📐 Sistema de Polígonos
 
-![hexagon](.github/hexagon.png)
-
 > Função simples para criar HUDs, notificações e outros sistemas.
 
 ## Instalação
